@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAA;EAChB,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAC,CAAC;CACR",
+    "sources": [
+        "Navigation.scss"
+    ],
+    "names": [],
+    "file": "Navigation.css"
+}

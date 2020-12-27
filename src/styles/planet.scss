@@ -1,0 +1,64 @@
+$height:10vh;
+$width:10vh;
+.planetContainer{
+    animation: im2 0.5s forwards;
+    width: $width;
+    height: $height;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition:0.5s ease;
+
+img{
+    width:10vh;
+    height: 10vh;
+}
+span{
+    animation: sp2 1.0s forwards;
+    color:white;
+    font-size:3vh;
+    opacity: 0;
+}
+}
+.planetContainer:hover{
+    animation: im 0.5s forwards;
+   span{
+        animation: sp 1.0s forwards;
+    }
+}
+@keyframes sp {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  @keyframes im {
+    0% {
+    width: $width;
+    height: $height;
+    }
+    100% {
+        width: $width ;
+        height: $height +3vh;
+    }
+  }
+  @keyframes sp2 {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+  @keyframes im2 {
+    0% {
+    width: $width;
+    height: $height+3vh;
+    }
+    100% {
+        width: $width ;
+        height: $height ;
+    }
+  }

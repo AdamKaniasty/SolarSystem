@@ -1,0 +1,210 @@
+.aboutContainer {
+  background-color: black;
+  width: 100%;
+  height: 110vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tilesContainer {
+  padding-top: 5vh;
+  height: 110vh;
+  width: 12vh;
+  padding-left: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.tilesContainer:hover {
+  width: 45vh;
+  cursor: pointer;
+  height: 110vh;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.planetInfo {
+  background-color: black;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+  padding-top: 5vh;
+}
+
+.planetInfo h2 {
+  text-align: center;
+  padding-top: 6vh;
+  color: #e9e1e1;
+}
+
+.planetInfo .infoWrapper {
+  padding-top: 2vh;
+  width: 70vw;
+  height: 50vw;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.planetInfo .name {
+  width: 50vw;
+  height: 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.planetInfo .name .nameText {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 10vh;
+  color: rgba(223, 219, 219, 0.781);
+  border-bottom: 0.1vh solid rgba(223, 219, 219, 0.781);
+}
+
+.planetInfo .data {
+  width: 20vw;
+  height: 15vw;
+}
+
+.planetInfo .switch {
+  width: 20vw;
+  height: 10vw;
+  margin-left: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.planetInfo .switch h1 {
+  color: rgba(223, 219, 219, 0.781);
+  font-size: 4vh;
+}
+
+.planetInfo .switch .chooseButtonWrapper {
+  width: 20vw;
+  height: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.planetInfo .switch .chooseButton {
+  width: 9vw;
+  height: 4vw;
+  font-size: 3vh;
+  border: 0.1vh solid rgba(241, 240, 236, 0.5);
+  border-radius: 5vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(223, 219, 219, 0.781);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.planetInfo .switch .chooseButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.planetInfo .description {
+  width: 50vw;
+  height: 20vw;
+  border-radius: 5vh;
+  margin-top: 1vh;
+  padding: 2.5vh;
+}
+
+.planetInfo .description h1 {
+  color: rgba(241, 240, 236, 0.7);
+}
+
+.planetInfo .description p {
+  color: rgba(241, 240, 236, 0.5);
+}
+
+.planetInfo .planetImage {
+  margin: 1vh;
+  margin-top: 0vh;
+  border-radius: 5vh;
+  width: 20vw;
+  height: 20vw;
+  background-color: rgba(25, 25, 26, 0.1);
+}
+
+.planetInfo .solarImage {
+  width: 25vw;
+}
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,122 @@
+.planetContainer {
+  -webkit-animation: im2 0.5s forwards;
+          animation: im2 0.5s forwards;
+  width: 10vh;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.planetContainer img {
+  width: 10vh;
+  height: 10vh;
+}
+
+.planetContainer span {
+  -webkit-animation: sp2 1.0s forwards;
+          animation: sp2 1.0s forwards;
+  color: white;
+  font-size: 3vh;
+  opacity: 0;
+}
+
+.planetContainer:hover {
+  -webkit-animation: im 0.5s forwards;
+          animation: im 0.5s forwards;
+}
+
+.planetContainer:hover span {
+  -webkit-animation: sp 1.0s forwards;
+          animation: sp 1.0s forwards;
+}
+
+@-webkit-keyframes sp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes sp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes im {
+  0% {
+    width: 10vh;
+    height: 10vh;
+  }
+  100% {
+    width: 10vh;
+    height: 13vh;
+  }
+}
+
+@keyframes im {
+  0% {
+    width: 10vh;
+    height: 10vh;
+  }
+  100% {
+    width: 10vh;
+    height: 13vh;
+  }
+}
+
+@-webkit-keyframes sp2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sp2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes im2 {
+  0% {
+    width: 10vh;
+    height: 13vh;
+  }
+  100% {
+    width: 10vh;
+    height: 10vh;
+  }
+}
+
+@keyframes im2 {
+  0% {
+    width: 10vh;
+    height: 13vh;
+  }
+  100% {
+    width: 10vh;
+    height: 10vh;
+  }
+}
+/*# sourceMappingURL=planet.css.map */

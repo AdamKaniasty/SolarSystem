@@ -1,0 +1,716 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.homeContainer {
+  height: 100vh;
+  background-image: url("../assets/Background2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.homeContainer2 {
+  height: 100vh;
+  background-image: url("../assets/cover.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topNavbar {
+  position: fixed;
+  margin-top: 3vh;
+  height: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.topNavbar .imageWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.topNavbar .line {
+  height: 2vh;
+  width: 0.2vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: white;
+  -webkit-animation: lines 1s linear;
+          animation: lines 1s linear;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -2.99999s);
+          animation-delay: calc(var(--scroll) * -2.99999s);
+}
+
+.topNavbar img {
+  height: -0.5vh;
+  margin-left: 2.5vh;
+  margin-right: 2.5vh;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.topNavbar .navbarText {
+  font-size: 2.5vh;
+  color: white;
+  -webkit-animation: Text 1s linear;
+          animation: Text 1s linear;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: calc(var(--scroll) * -2.99999s);
+          animation-delay: calc(var(--scroll) * -2.99999s);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+@-webkit-keyframes Text {
+  0% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes Text {
+  0% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes lines {
+  0% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes lines {
+  0% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.topNavbar .imageWrapper:hover {
+  -webkit-filter: invert(70%) sepia(0%) saturate(347%) hue-rotate(316deg) brightness(89%) contrast(82%);
+          filter: invert(70%) sepia(0%) saturate(347%) hue-rotate(316deg) brightness(89%) contrast(82%);
+  cursor: pointer;
+}
+
+.topNavbar h1 {
+  margin-left: 2.5vh;
+  margin-right: 2.5vh;
+  font-size: 2.5vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: black;
+}
+
+.topNavbar h1:hover {
+  cursor: pointer;
+}
+
+.mainSection {
+  height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainSection h1 {
+  color: #cec8dd;
+  font-size: 17vh;
+  margin-left: 17vh;
+}
+
+.mainSection .animation {
+  width: 115vh;
+  margin-right: 5vh;
+}
+
+.Merkury {
+  position: fixed;
+  left: 126.5vh;
+  top: 68vh;
+  width: 8vh;
+  height: 8vh;
+  -webkit-animation: Me 1s linear;
+          animation: Me 1s linear;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: calc(var(--scroll) * -3.1s);
+          animation-delay: calc(var(--scroll) * -3.1s);
+  display: block;
+}
+
+@-webkit-keyframes Me {
+  0% {
+    left: 126.5vh;
+    top: 68vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 18.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 17.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+@keyframes Me {
+  0% {
+    left: 126.5vh;
+    top: 68vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 18.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 17.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+.Wenus {
+  position: fixed;
+  left: 178vh;
+  top: 77vh;
+  width: 9vh;
+  height: 9vh;
+  -webkit-animation: We 1s linear;
+          animation: We 1s linear;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -3.1s);
+          animation-delay: calc(var(--scroll) * -3.1s);
+  display: block;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes We {
+  0% {
+    left: 178vh;
+    top: 77vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 28.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 27.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+@keyframes We {
+  0% {
+    left: 178vh;
+    top: 77vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 28.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 27.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+.Ziemia {
+  position: fixed;
+  left: 123vh;
+  top: 8vh;
+  width: 12vh;
+  height: 12vh;
+  -webkit-animation: Zi 1s linear;
+          animation: Zi 1s linear;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -3.1s);
+          animation-delay: calc(var(--scroll) * -3.1s);
+  display: block;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes Zi {
+  0% {
+    left: 123vh;
+    top: 8vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 38.2vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 37.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+@keyframes Zi {
+  0% {
+    left: 123vh;
+    top: 8vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 38.2vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 37.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+.Mars {
+  position: fixed;
+  left: 149vh;
+  top: 22vh;
+  width: 12vh;
+  height: 12vh;
+  -webkit-animation: Ma 1s linear;
+          animation: Ma 1s linear;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -3.1s);
+          animation-delay: calc(var(--scroll) * -3.1s);
+  display: block;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes Ma {
+  0% {
+    left: 149vh;
+    top: 24.3vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 48.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 47.67vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+@keyframes Ma {
+  0% {
+    left: 149vh;
+    top: 24.3vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 48.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 47.67vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+.Jowisz {
+  position: fixed;
+  left: 162vh;
+  top: 48vh;
+  width: 25vh;
+  height: 25vh;
+  -webkit-animation: Jo 1s linear;
+          animation: Jo 1s linear;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -3.1s);
+          animation-delay: calc(var(--scroll) * -3.1s);
+  display: block;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes Jo {
+  0% {
+    left: 162vh;
+    top: 48vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 58.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 57.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+@keyframes Jo {
+  0% {
+    left: 162vh;
+    top: 48vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 58.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 57.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+.Saturn {
+  position: fixed;
+  left: 95vh;
+  top: 18vh;
+  width: 28vh;
+  height: 28vh;
+  -webkit-animation: Sa 1s linear;
+          animation: Sa 1s linear;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -3.1s);
+          animation-delay: calc(var(--scroll) * -3.1s);
+  display: block;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes Sa {
+  0% {
+    left: 95vh;
+    top: 18vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 68.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 67.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+@keyframes Sa {
+  0% {
+    left: 95vh;
+    top: 18vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 68.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 67.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+.Uran {
+  position: fixed;
+  left: 175vh;
+  top: 13vh;
+  width: 19vh;
+  height: 19vh;
+  -webkit-animation: Ur 1s linear;
+          animation: Ur 1s linear;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -3.1s);
+          animation-delay: calc(var(--scroll) * -3.1s);
+  display: block;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes Ur {
+  0% {
+    left: 175vh;
+    top: 13vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 78.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 77.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+@keyframes Ur {
+  0% {
+    left: 175vh;
+    top: 13vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 78.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 77.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+.Neptun {
+  position: fixed;
+  left: 97vh;
+  top: 68vh;
+  width: 17vh;
+  height: 17vh;
+  -webkit-animation: Ne 1s linear;
+          animation: Ne 1s linear;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -3.1s);
+          animation-delay: calc(var(--scroll) * -3.1s);
+  display: block;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes Ne {
+  0% {
+    left: 97vh;
+    top: 68vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 88.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 87.8vh;
+    width: 10vh;
+    height: 10vh;
+    pointer-events: none;
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes Ne {
+  0% {
+    left: 97vh;
+    top: 68vh;
+    display: block;
+  }
+  99% {
+    left: 1vh;
+    top: 88.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+  }
+  100% {
+    left: 1vh;
+    top: 87.8vh;
+    width: 10vh;
+    height: 10vh;
+    pointer-events: none;
+    opacity: 0;
+    display: none;
+  }
+}
+/*# sourceMappingURL=home.css.map */

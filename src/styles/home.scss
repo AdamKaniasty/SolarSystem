@@ -1,0 +1,404 @@
+
+body{
+  margin:0;
+  padding:0;
+}
+
+.homeContainer{
+  height: 100vh;
+  background-image: url("../assets/Background2.jpg");
+  background-position: center center;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+.homeContainer2{
+  height: 100vh;
+  background-image: url("../assets/cover.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+$navbarHeigth: 3vh;
+$navbarMargin:2.5vh;
+.topNavbar{
+  position: fixed;
+  margin-top:3vh;
+  //background-color:red;
+  height: $navbarHeigth;
+  display: flex;
+  justify-content: flex-start;
+  .imageWrapper{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: 0.3s;
+  }
+  .line{
+    height: 2vh;
+    width: 0.2vh;
+    align-self: center;
+    background-color:white;
+    animation: lines 1s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -2.99999s);
+  }
+  img{
+  height: $navbarHeigth - 3.5vh;
+  margin-left:$navbarMargin;
+  margin-right: $navbarMargin;
+  transition: 0.3s;
+  }
+  .navbarText{
+    font-size:2.5vh;
+    color:white;
+  animation: Text 1s linear;
+  animation-play-state: paused;
+  animation-fill-mode:forwards;
+  animation-delay: calc(var(--scroll) * -2.99999s);
+  transition:transform 0.3s ease;
+  }
+  @keyframes Text {
+    0%{
+      color:black;
+    }
+    100%{
+      color:white;
+    }
+  }
+  @keyframes lines {
+    0%{
+      background-color:rgba(0,0,0,0.2);
+    }
+    100%{
+      background-color:white;
+    }
+  }
+  .imageWrapper:hover{
+    filter: invert(70%) sepia(0%) saturate(347%) hue-rotate(316deg) brightness(89%) contrast(82%);
+    cursor:pointer;
+  }
+  h1{
+  margin-left:$navbarMargin;
+  margin-right: $navbarMargin;
+  font-size:2.5vh;
+  align-self: center;
+  color:black;
+  }
+  h1:hover{
+    cursor:pointer;
+  }
+}
+.mainSection{
+  height: 100vh - $navbarHeigth - 5vh;
+  display: flex;
+  align-items:center;
+  h1{ 
+   color:rgb(206, 200, 221);
+  font-size:17vh;
+  margin-left:17vh;
+  }
+  .animation{
+    width:115vh;
+    margin-right: 5vh;
+  }
+}
+.Merkury{
+  position: fixed;
+  left:126.5vh;
+  top:68vh;
+  width: 8vh;
+  height: 8vh;
+  animation: Me 1s linear;
+  animation-play-state: paused;
+  animation-fill-mode:forwards;
+  animation-delay: calc(var(--scroll) * -3.1s);
+  display: block;
+}
+@keyframes Me {
+  0%{
+    left:126.5vh;
+    top:68vh;
+    display: block;
+  }
+  99%{
+    left:1vh;
+    top:18.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:1; 
+  }
+  100%{
+    left:1vh;
+    top:17.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:0;
+    
+  }
+}
+.Wenus{
+  position: fixed;
+  left:178vh;
+  top:77vh;
+  width: 9vh;
+  height: 9vh;
+  animation: We 1s linear;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -3.1s );
+  display: block;
+  animation-fill-mode:forwards;
+}
+@keyframes We {
+  0%{
+    left:178vh;
+  top:77vh;
+    display: block;
+  }
+  99%{
+    left:1vh;
+    top:28.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:1; 
+  }
+  100%{
+    left:1vh;
+    top:27.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:0;
+  }
+}
+.Ziemia{
+  position: fixed;
+  left:123vh;
+  top:8vh;
+  width: 12vh;
+  height: 12vh;
+  animation: Zi 1s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3.1s);
+    display: block;
+    animation-fill-mode:forwards;
+}
+@keyframes Zi {
+  0%{
+    left:123vh;
+    top:8vh;
+    display: block;
+  }
+  99%{
+    left:1vh;
+    top:38.2vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:1; 
+  }
+  100%{
+    left:1vh;
+    top:37.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:0;
+  }
+}
+.Mars{
+  position: fixed;
+  left:149vh;
+  top:22vh;
+  width: 12vh;
+  height: 12vh;
+  animation: Ma 1s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3.1s);
+    display: block;
+    animation-fill-mode:forwards;
+}
+@keyframes Ma {
+  0%{
+    left:149vh;
+  top:24.3vh;
+    display: block;
+  }
+  99%{
+    left:1vh;
+    top:48.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:1; 
+  }
+  100%{
+    left:1vh;
+    top:47.67vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:0;
+  }
+}
+.Jowisz{
+  position: fixed;
+  left:162vh;
+  top:48vh;
+  width: 25vh;
+  height: 25vh;
+  animation: Jo 1s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3.1s);
+    display: block;
+    animation-fill-mode:forwards;
+}
+@keyframes Jo {
+  0%{
+    left:162vh;
+  top:48vh;
+    display: block;
+  }
+  99%{
+    left:1vh;
+    top:58.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:1; 
+  }
+  100%{
+    left:1vh;
+    top:57.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:0;
+  }
+}
+.Saturn{
+  position: fixed;
+  left:95vh;
+  top:18vh;
+  width: 28vh;
+  height: 28vh;
+  animation: Sa 1s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3.1s);
+    display: block;
+    animation-fill-mode:forwards;
+}
+@keyframes Sa {
+  0%{
+    left:95vh;
+  top:18vh;
+    display: block;
+  }
+  99%{
+    left:1vh;
+    top:68.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:1; 
+  }
+  100%{
+    left:1vh;
+    top:67.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:0;
+  }
+}
+.Uran{
+  position: fixed;
+  left:175vh;
+  top:13vh;
+  width: 19vh;
+  height: 19vh;
+  animation: Ur 1s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3.1s);
+    display: block;
+    animation-fill-mode:forwards;
+}
+@keyframes Ur {
+  0%{
+    left:175vh;
+  top:13vh;
+    display: block;
+  }
+  99%{
+    left:1vh;
+    top:78.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:1; 
+  }
+  100%{
+    left:1vh;
+    top:77.8vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:0;
+  }
+}
+.Neptun{
+  position: fixed;
+  left:97vh;
+  top:68vh;
+  width: 17vh;
+  height: 17vh;
+  animation: Ne 1s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3.1s);
+    display: block;
+    animation-fill-mode:forwards;
+}
+@keyframes Ne {
+  0%{
+    left:97vh;
+  top:68vh;
+    display: block;
+  }
+  99%{
+    left:1vh;
+    top:88.3vh;
+    width: 10vh;
+    height: 10vh;
+    display: none;
+    pointer-events: none;
+    opacity:1; 
+  }
+  100%{
+    left:1vh;
+    top:87.8vh;
+    width: 10vh;
+    height: 10vh;
+    pointer-events: none;
+    opacity:0;
+    display: none;
+  }
+}
